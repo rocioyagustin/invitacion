@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const fechaBoda = new Date("2026-02-21T19:30:00").getTime();
+  const fechaBoda = new Date("2026-02-21T17:30:00").getTime();
 
   function actualizarContador() {
     const ahora = new Date().getTime();
