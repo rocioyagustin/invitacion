@@ -1,0 +1,86 @@
+.section-hospedaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mostaza);
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+
+.section-hospedaje h2 {
+  text-align: start;
+  color: var(--color-crema);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.content-hospedaje-item a img {
+  width: 150px;
+}
+.content-hospedaje-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.content-hospedaje {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0 2rem;
+  line-height: 0.7;
+  gap: 0.5rem;
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 2.5s ease;
+}
+
+.content-hospedaje-none {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0 2rem;
+  line-height: 0.7;
+  gap: 0.5rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 1s ease;
+}
+
+#btn-hospedajes {
+  cursor: pointer;
+  font-family: area-inktrap-extended, sans-serif;
+  background-color: transparent;
+  color: var(--color-crema);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-crema);
+  border-radius: 25px;
+  transition: all 0.4s ease, padding 0.4s ease;
+}
+
+#btn-hospedajes:hover {
+  background-color: var(--color-crema);
+  color: var(--color-mostaza);
+}
+
+#btn-hospedajes.expand-animation {
+  padding: 0.5rem 1.2rem;
+}
+
+@media (width >=768px) {
+  .section-hospedaje h2 {
+    font-size: 5rem;
+  }
+  .content-hospedaje-item a img {
+    width: 200px;
+  }
+}

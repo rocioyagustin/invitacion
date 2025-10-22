@@ -1,0 +1,28 @@
+.section-faltan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mostaza);
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.section-faltan p {
+  color: var(--color-bordo);
+  font-size: var(--font-size-small);
+  letter-spacing: 0.5rem;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contador-numero {
+  font-family: area-inktrap-extended, sans-serif;
+  font-size: 2rem;
+  color: var(--color-bordo);
+}

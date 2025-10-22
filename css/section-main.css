@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-image: url("../img/fondo-inicio.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main h1 {
+  font-size: 4.5rem;
+  color: var(--color-crema);
+  line-height: 0.8;
+}

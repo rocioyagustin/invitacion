@@ -1,0 +1,20 @@
+@import url("https://use.typekit.net/vbk7vfg.css");
+:root {
+  --color-bordo: #891816;
+  --color-celeste: #6f9792;
+  --color-mostaza: #ca8332;
+  --color-crema: #eedcc6;
+
+  --font-size-small: 1.2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arsenica-variable, sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: area-inktrap-extended, sans-serif;
+}
