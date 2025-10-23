@@ -125,6 +125,15 @@
   .content-ubicacion {
     top: 5rem;
   }
+  .content-ubicacion-titulo p {
+    font-size: 1.5rem;
+  }
+  .content-ubicacion-info p {
+    font-size: 1.5rem;
+  }
+  .content-ubicacion-info a img {
+    width: 200px;
+  }
 
   .section-ubicacion > img {
     object-fit: cover;
