@@ -79,6 +79,13 @@ btnUbicacion.addEventListener("click", function () {
     contentTitulo.classList.add("content-ubicacion-titulo-none");
     btnUbicacion.textContent = "OCULTAR INFORMACIÓN";
   } else {
+    // Agregar animación de retorno
+    btnUbicacion.classList.add("return-animation");
+
+    setTimeout(() => {
+      btnUbicacion.classList.remove("return-animation");
+    }, 800);
+
     contentUbicacion.classList.remove("content-ubicacion-info");
     contentUbicacion.classList.add("content-ubicacion-info-none");
     contentTitulo.classList.remove("content-ubicacion-titulo-none");
