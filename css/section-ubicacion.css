@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  top: 8rem;
   bottom: 1rem;
 }
 
@@ -32,9 +33,10 @@
   text-align: center;
   font-size: 2.5rem;
   line-height: 0.8;
+  margin-top: 7rem;
 }
 
-.content-ubicacion p {
+.content-ubicacion-titulo p {
   color: var(--color-bordo);
   text-align: center;
   letter-spacing: 0.3rem;
@@ -42,12 +44,86 @@
   line-height: 1.2;
 }
 
+.content-ubicacion-info p {
+  color: var(--color-bordo);
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+#btn-ubicacion {
+  cursor: pointer;
+  font-family: area-inktrap-extended, sans-serif;
+  background-color: var(--color-bordo);
+  color: var(--color-crema);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-crema);
+  border-radius: 25px;
+  transition: all 0.4s ease, padding 0.4s ease;
+}
+
+#btn-ubicacion:hover {
+  background-color: var(--color-crema);
+  color: var(--color-bordo);
+  border: 2px solid var(--color-bordo);
+}
+
+#btn-ubicacion.expand-animation {
+  padding: 0.5rem 1.2rem;
+}
+
+.content-ubicacion-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 1;
+  max-height: 1000px;
+  overflow: visible;
+  transition: opacity 0.8s ease, max-height 2.5s ease;
+  text-align: center;
+}
+
+.content-ubicacion-info-none {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 1s ease;
+}
+
+.content-ubicacion-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.content-ubicacion-titulo-none {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
 @media (width >=768px) {
   .content-ubicacion h2 {
     font-size: 5rem;
   }
   .content-ubicacion {
-    top: 10rem;
+    top: 5rem;
   }
 
   .section-ubicacion > img {

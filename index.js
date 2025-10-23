@@ -59,6 +59,33 @@ btnHospedajes.addEventListener("click", function () {
   }
 });
 
+// Ver ubicación
+const btnUbicacion = document.getElementById("btn-ubicacion");
+
+btnUbicacion.addEventListener("click", function () {
+  const contentUbicacion = document.getElementById("content-ubicacion");
+  const contentTitulo = document.getElementById("content-ubicacion-titulo");
+
+  // Agregar animación de expansión
+  btnUbicacion.classList.add("expand-animation");
+
+  setTimeout(() => {
+    btnUbicacion.classList.remove("expand-animation");
+  }, 400);
+
+  if (contentUbicacion.classList.contains("content-ubicacion-info-none")) {
+    contentUbicacion.classList.remove("content-ubicacion-info-none");
+    contentUbicacion.classList.add("content-ubicacion-info");
+    contentTitulo.classList.add("content-ubicacion-titulo-none");
+    btnUbicacion.textContent = "OCULTAR INFORMACIÓN";
+  } else {
+    contentUbicacion.classList.remove("content-ubicacion-info");
+    contentUbicacion.classList.add("content-ubicacion-info-none");
+    contentTitulo.classList.remove("content-ubicacion-titulo-none");
+    btnUbicacion.textContent = "¿CÓMO LLEGAR?";
+  }
+});
+
 // Animaciones de scroll
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
